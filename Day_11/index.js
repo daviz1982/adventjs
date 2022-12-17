@@ -1,7 +1,7 @@
 function getCompleted(part, total) {
   const tts = (str) => {
     const [h, m, s] = str.split(":")
-    return 3600 * h + 60 * m + s
+    return 3600 * h + 60 * m + +s
   }
 
   const format = rel => {

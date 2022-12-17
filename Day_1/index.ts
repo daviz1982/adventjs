@@ -1,7 +1,7 @@
 function wrapping(gifts) {
   const func = gift => {
     const wrap = '*'.repeat(gift.length + 2)
-    return `${wrap}\n*${gift}*\n${wrap}`
+    return [wrap, `*${gift}*`, wrap].join('\n')
   }
   return gifts.map(func)
 }
